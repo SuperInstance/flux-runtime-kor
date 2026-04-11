@@ -1,0 +1,58 @@
+# ═══════════════════════════════════════════
+# 유체 어휘집 — 산술 (數學)
+# FLUX Vocabulary: Mathematics (Korean)
+# ═══════════════════════════════════════════
+#
+# 한자어(Sino-Korean)를 추상 타입명으로 사용
+# 한국어 연산어를 NL 패턴으로 정의
+
+[types]
+# 한자어 기반 추상 타입
+정수 = "integer"
+실수 = "float"
+분수 = "rational"
+행렬 = "matrix"
+벡터 = "vector"
+집합 = "set"
+수열 = "sequence"
+함수 = "function"
+
+[operators]
+# 사칙연산
+더하기 = "add"
+빼기 = "sub"
+곱하기 = "mul"
+나누기 = "div"
+나머지 = "mod"
+거듭제곱 = "pow"
+
+# 고급 연산
+팩토리얼 = "factorial"
+제곱근 = "sqrt"
+로그 = "log"
+사인 = "sin"
+코사인 = "cos"
+탄젠트 = "tan"
+
+# 집합 연산
+합집합 = "union"
+교집합 = "intersection"
+차집합 = "difference"
+여집합 = "complement"
+
+[patterns]
+# 한국어 산술 NL 패턴
+calc_add = "계산 {a} 더하기 {b}"
+calc_sub = "계산 {a} 빼기 {b}"
+calc_mul = "{a} 곱하기 {b}"
+calc_div = "{a} 나누기 {b}"
+sum_range = "{a} 부터 {b} 까지 합"
+factorial = "{n} 의 팩토리얼"
+power = "{base} 의 {exp} 제곱"
+
+[constants]
+원주율 = 3.14159265358979
+오일러 = 2.71828182845905
+무한대 = "infinity"
+영 = 0
+일 = 1

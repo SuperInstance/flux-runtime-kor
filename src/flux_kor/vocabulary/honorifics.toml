@@ -1,0 +1,92 @@
+# ═══════════════════════════════════════════════════════
+# 경어 매핑 — 동사 어미 → 경어 수준 → 권한 등급
+# Honorific Mapping: Verb Endings → Honorific Level → Capability
+# ═══════════════════════════════════════════════════════
+
+[honorifics]
+# ── 하십시오체 (Hasipsioche) — 최경어 / admin ──
+# CAP level 4 | 권한: 0b1000
+# 사용: 관리자 명령, 시스템 제어, 권한 변경
+
+[honorifics.hasipsioche]
+level = 4
+role = "admin"
+description = "하십시오체 — 최경어, 관리자 전용"
+endings = [
+    "습니다",
+    "ㅂ니다",
+    "십시오",
+    "으십시오",
+    "하세요",
+    "으세요",
+    "하십시오",
+]
+examples = [
+    "계산 5 더하기 3 결과를 보고하십시오",
+    "레지스터 영에 42 대입하십시오",
+    "전체에 작업 완료 방송하십시오",
+]
+
+# ── 해요체 (Haeyoche) — 예사 존댓말 / standard user ──
+# CAP level 3 | 권한: 0b0100
+# 사용: 일반 사용자, 표준 연산
+
+[honorifics.haeyoche]
+level = 3
+role = "standard-user"
+description = "해요체 — 일반 사용자"
+endings = [
+    "아요",
+    "어요",
+    "해요",
+    "이에요",
+    "예요",
+]
+examples = [
+    "계산 5 더하기 3 해요",
+    "레지스터 영에 42 대입해요",
+    "전체에 작업 완료 방송해요",
+]
+
+# ── 해체 (Haeche) — 반말 / peer ──
+# CAP level 2 | 권한: 0b0010
+# 사용: 동료 간, 개발/디버그
+
+[honorifics.haeche]
+level = 2
+role = "peer"
+description = "해체 — 동료, 개발용"
+endings = [
+    "해",
+    "거라",
+    "너라",
+]
+examples = [
+    "계산 5 더하기 3 해",
+    "레지스터 영에 42 대입해",
+]
+
+# ── 해라체 (Haerache) — 평어 / system ──
+# CAP level 1 | 권한: 0b0001
+# 사용: 내부 시스템, 자동 생성 코드
+
+[honorifics.haerache]
+level = 1
+role = "system"
+description = "해라체 — 내부 시스템, 평어"
+endings = [
+    "한다",
+    "이다",
+    "아라",
+    "어라",
+]
+examples = [
+    "계산 5 더하기 3 한다",
+    "레지스터 영에 42 대입한다",
+]
+
+[consistency_rules]
+# 경어 일관성 규칙
+# 한 프로그램 내에서 경어 수준이 혼용되면 경고
+mixed_honorific_warning = "경어 수준이 혼용되었습니다. 일관된 경어 체계를 사용하세요."
+escalation_allowed = false  # 낮은 경어 → 높은 경어 승격 금지 (명시적 CAP_SET 필요)

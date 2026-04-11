@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/flux_kor/__init__.py
+src/flux_kor/cli.py
+src/flux_kor/honorifics.py
+src/flux_kor/interpreter.py
+src/flux_kor/vm.py
+src/flux_kor/vocabulary/__init__.py
+src/flux_runtime_kor.egg-info/PKG-INFO
+src/flux_runtime_kor.egg-info/SOURCES.txt
+src/flux_runtime_kor.egg-info/dependency_links.txt
+src/flux_runtime_kor.egg-info/entry_points.txt
+src/flux_runtime_kor.egg-info/requires.txt
+src/flux_runtime_kor.egg-info/top_level.txt
+tests/test_interpreter_kor.py

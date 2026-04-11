@@ -1,0 +1,2 @@
+[console_scripts]
+flux-kor = flux_kor.cli:main

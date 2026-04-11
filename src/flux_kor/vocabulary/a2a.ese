@@ -1,0 +1,28 @@
+# ═══════════════════════════════════════════
+# 유체 어휘집 — 에이전트 간 통신 (Agent-to-Agent)
+# FLUX Vocabulary: A2A Communication (Korean)
+# ═══════════════════════════════════════════
+#
+# 에이전트 간 통신 패턴.
+# 조사(은/는, 이/가, 에게)를 범위 연산자로 활용.
+
+[commands]
+send = "{agent} 에게 {message} 전달"
+question = "{agent} 에게 {topic} 질문"
+broadcast = "전체에 {message} 방송"
+acknowledge = "{agent} 확인 전달"
+request = "{agent} 에게 {resource} 요청"
+
+[scope_operators]
+# 조사를 범위 연산자로
+topic_marker = ["은", "는"]       # 주제 조사 → scope
+subject_marker = ["이", "가"]     # 주어 조사 → actor
+object_marker = ["을", "를"]     # 목적어 조사 → target
+dative_marker = ["에게", "에"]   # 방향 조사 → destination
+genitive_marker = ["의"]         # 소유 조사 → ownership
+
+[patterns]
+# SOV 기반 통신 패턴
+delegate = "{sender}은 {task}를 {receiver}에게 위임합니다"
+report = "{agent}이 {status}를 보고합니다"
+coordinate = "{leader}이 {members}에게 지시를 전달합니다"

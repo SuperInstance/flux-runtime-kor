@@ -1,0 +1,48 @@
+# ═══════════════════════════════════════════
+# 유체 어휘집 — 해양 (海軍)
+# FLUX Vocabulary: Maritime (Korean)
+# ═══════════════════════════════════════════
+#
+# 해양 도메인 어휘.
+# 한국 해군 용어를 FLUX 에이전트 명명으로 사용.
+
+[agents]
+# 선박/해군 에이전트 역할
+함장 = "captain"
+부함장 = "first_mate"
+조타수 = "helmsman"
+통신사 = "communications_officer"
+기관사 = "engineer"
+항해사 = "navigator"
+
+[tiles]
+# 선박 타일 유형
+함선 = "ship"
+잠수함 = "submarine"
+호위함 = "frigate"
+구축함 = "destroyer"
+항공모함 = "aircraft_carrier"
+보급선 = "supply_vessel"
+
+[commands]
+# 해양 명령 NL 패턴
+ahead = "{speed} 노트 전진"
+reverse = "후진"
+turn_port = "좌현 {degrees}도 선회"
+turn_starboard = "우현 {degrees}도 선회"
+surface = "부상하세요"
+submerge = "잠항하세요"
+anchor = "정박하세요"
+weigh_anchor = "출항하세요"
+
+[status]
+항해중 = "underway"
+정박 = "anchored"
+잠항 = "submerged"
+대기 = "standing_by"
+비상 = "emergency"
+
+[messages]
+전진보고 = "{agent} 전진 속도 {speed}노트 보고합니다"
+상황보고 = "{agent} 상황 정상 보고합니다"
+비상보고 = "{agent} 비상 상황 발생 보고합니다"
