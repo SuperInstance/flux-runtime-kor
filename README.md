@@ -3,6 +3,9 @@
 > 한국어 우선 자연어 프로그래밍 런타임
 > Korean-first natural language runtime where Korean grammar fundamentally shapes the architecture
 
+> **This is the Korean (한국어) localization of [flux-runtime](https://github.com/SuperInstance/flux-runtime).**
+> FLUX-kor is part of the FLUX internationalization fleet — a Korean-first NL runtime for the FLUX universal bytecode VM, mapping honorific systems to RBAC, SOV word order to CPS compilation, and particles to scope operators.
+
 ## 개요
 
 유체(FLUX)는 한국어 문법을 아키텍처의 근간으로 삼는 자연어 프로그래밍 런타임입니다.
@@ -220,3 +223,7 @@ flux-runtime-kor/
 ## 라이선스
 
 MIT License
+
+---
+
+<img src="callsign1.jpg" width="128" alt="callsign">
